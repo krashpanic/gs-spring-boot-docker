@@ -116,7 +116,7 @@ mvn package docker:build
 * `git status` for good measure :
 
 ```
-AverageJoes-MacBook-Pro:gs-spring-boot-docker nsuvarna$ git status
+AverageJoes-MacBook-Pro:gs-spring-boot-docker averagejoe$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
