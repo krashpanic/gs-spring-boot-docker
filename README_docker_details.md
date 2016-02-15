@@ -9,7 +9,7 @@ git clone https://github.com/spring-guides/gs-spring-boot-docker.git
 
 * `cd initial/src/main/java/hello`
 
- * view the same `Application.java` file
+* sample `Application.java` file
 
 ```
 package hello;
@@ -50,14 +50,16 @@ and go to `localhost:8080` to see your "Hello Docker World" message
 
 The configuration specifies 3 things:
 
-1. The image name (or tag), which will end up here as springio/gs-spring-boot-docker
+1. The image name (or tag), which will end up here as `springio/gs-spring-boot-docker`
 
 2. The directory in which to find the Dockerfile
 
 3. The resources (files) to copy from the target directory to the docker build (alongside the Dockerfile) - we only need the jar file in this example
 
+`pom.xml` snippet :
 
 ```
+...
 <properties>
       <docker.image.prefix>springio</docker.image.prefix>
 </properties>
@@ -81,6 +83,7 @@ The configuration specifies 3 things:
         </plugin>
     </plugins>
 </build>
+...
 ```
 
 * Now on to the `Dockerfile` :
