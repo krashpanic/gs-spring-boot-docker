@@ -1,11 +1,7 @@
-#Sample Spring boot Docker :
+#Dockerizing a sample Spring Boot app
 
 
-* clone from github
-
-```
-git clone https://github.com/spring-guides/gs-spring-boot-docker.git
-```
+* clone from github `git clone https://github.com/spring-guides/gs-spring-boot-docker.git`
 
 * `cd initial/src/main/java/hello`
 
