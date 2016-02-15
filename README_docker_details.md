@@ -178,6 +178,13 @@ e2a4fb18da48: Image successfully pushed
 latest: digest: sha256:f1410addb199278805a48b779abfa969ceb35ba98adb08911d1fc9d7083f5b11 size: 32852
 ```
 
+* Now go demo your dockerized spring boot app running on cloud foundry
+
+```
+Ya Know What To Do ;-)
+```
+
+
 ###Reference :
 
 https://spring.io/guides/gs/spring-boot-docker/
