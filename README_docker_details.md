@@ -102,7 +102,7 @@ docker-machine create --driver virtualbox spring-boot
 docker-machine env spring-boot`
 export DOCKER_TLS_VERIFY="1"`
 export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/joe/.docker/machine/machines/spring-boot"
+export DOCKER_CERT_PATH="/Users/averagejoe/.docker/machine/machines/spring-boot"
 export DOCKER_MACHINE_NAME="spring-boot"
 eval "$(docker-machine env spring-boot)”
 ```
@@ -112,6 +112,26 @@ eval "$(docker-machine env spring-boot)”
 mvn package && java -jar target/gs-spring-boot-docker-0.1.0.jar
 mvn package docker:build
 ```
+
+* `git status` for good measure :
+
+```
+AverageJoes-MacBook-Pro:gs-spring-boot-docker nsuvarna$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   initial/pom.xml
+	modified:   initial/src/main/java/hello/Application.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README_docker_details.md
+	initial/src/main/docker/
+```	
 
 * verify docker your docker image is running locally :
 
